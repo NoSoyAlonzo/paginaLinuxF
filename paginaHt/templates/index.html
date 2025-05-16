@@ -1,0 +1,45 @@
+<!Doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaginaHt</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/base.css') }}">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">Inicsio</a></li>
+                <li><a href="">Acerca de</a></li>
+                <li><a href="z">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Bienvenido a PaginaHt</h2>
+        <p>Esta es una página de ejemplo utilizando Flask y HTML.</p>
+        <div class="contenedores">
+            <h2>Hero Section</h2>
+            <p>Esta es una sección destacada de la página.</p>
+            <div class="content">
+                <h3>Contenido Principal</h3>
+                <p>Aquí puedes agregar el contenido principal de tu página.</p>
+            </div>
+             <div class="proxy-info">
+                <p><strong>IP del Servidor Flask:</strong> {{ server_ip }}</p>
+                <p><strong>Hora del Servidor:</strong> {{ server_time }}</p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 PaginaHt. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+
+</html>
