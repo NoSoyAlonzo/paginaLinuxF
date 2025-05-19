@@ -1,45 +1,47 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PaginaHt</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='/base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Acerca de</a></li>
-                <li><a href="z">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header class="main-header">Pagina para registro de alumnos</header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
 
     <main>
-        <h1>Bienvenido a mi pagina</h1>
-        <p>Esta es una página de ejemplo utilizando Flask y HTML.</p>
-        <div class="contenedores">
+        <section class="hero">
+            <h1>Bienvenido a mi página</h1>
+            <p>Esta es una página para demostrar el funcionamiento de mi servidor proxy inverso con Nginx.</p>
+        </section>
+
+        <section class="contenedores">
             <h2>Hero Section</h2>
             <p>Esta es una sección destacada de la página.</p>
+
             <div class="content">
                 <h3>Contenido Principal</h3>
                 <p>Aquí puedes agregar el contenido principal de tu página.</p>
             </div>
-             <div class="proxy-info">
+
+            <div class="proxy-info">
                 <p><strong>IP del Servidor Flask:</strong> {{ server_ip }}</p>
                 <p><strong>Hora del Servidor:</strong> {{ server_time }}</p>
             </div>
-
-        </div>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 PaginaHt. Todos los derechos reservados.</p>
+        <p>&copy; 2025 PaginaHt. Todos los derechos reservados pa mi.</p>
     </footer>
 </body>
-
-
 </html>

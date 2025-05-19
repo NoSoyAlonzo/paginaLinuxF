@@ -1,44 +1,84 @@
-body{
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
 
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-}
-.contenedores{
-    display: grid;
-    background:linear-gradient(to right, #cfc6c4, #feb47b);
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    border-radius: 10px; 
-}
-nav{
-    background-color: #333;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    font-family: Arial, sans-serif; 
-    list-style-type: none
-}
-ul{
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-li{
-    float: left;
-    display: inline;
-    margin: 5px 0;
-}
-li a{
-    display: block;
+.main-header {
+    background-color: #1e40af;
     color: white;
+    padding: 1.5rem;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    padding-left: 20;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
-li a:hover{
-    text-decoration: underline;
+
+.navbar {
+    background-color: #1e3a8a;
+    padding: 1rem;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #dbeafe;
+}
+
+main {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero {
+    background: linear-gradient(to right, #3b82f6, #1e40af);
+    color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contenedores {
+    background: white;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.content {
+    margin-top: 1.5rem;
+}
+
+.proxy-info {
+    margin-top: 2rem;
+    background-color: #f1f5f9;
+    padding: 1rem;
+    border-left: 5px solid #2563eb;
+    border-radius: 0.5rem;
+    font-family: monospace;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #1e3a8a;
+    color: white;
+    margin-top: 2rem;
 }
