@@ -9,3 +9,6 @@ def home():
     client_ip = request.headers.get('X-Real-IP', request.remote_addr)
     server_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     return render_template("index.html", client_ip=client_ip, server_time=server_time)
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
